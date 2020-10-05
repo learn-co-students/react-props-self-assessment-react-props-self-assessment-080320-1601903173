@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
 import Header from './Components/Header'
+import NotesContainer from './Components/NotesContainer'
 
 class App extends Component {
   render() {
-    return <Header header="Welcome!" />
+    return <div>
+        <Header header="Welcome!" />
+        <NotesContainer />
+    </div>
   }
 }
 
