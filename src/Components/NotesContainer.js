@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 class NotesContainer extends React.Component {
 
     apiResponse = () => {
@@ -7,7 +8,15 @@ class NotesContainer extends React.Component {
     }
 
     return(
-        <ul></ul >
+        <ul>
+
+        <li>"First Note"</li>,
+        <li>"Second Note"</li>,
+        <li>"Third Note"</li>
+
+        </ul>
     )
 
 }
+
+export default NotesContainer
