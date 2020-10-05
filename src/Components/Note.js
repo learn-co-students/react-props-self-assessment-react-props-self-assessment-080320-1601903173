@@ -1,6 +1,8 @@
 import React from 'react'
 
 
-function Note() {
-    return <li>{props.content}</li>
+export function Note(str) {
+  return (
+    <li>{str}</li>
+  )
 }
