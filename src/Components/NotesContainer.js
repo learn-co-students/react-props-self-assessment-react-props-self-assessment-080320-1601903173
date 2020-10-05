@@ -1,13 +1,16 @@
 import React from 'react'
+import Notes from './Components/Notes'
 
-class NotesContainer extends React.Component {
+export default class NotesContainer extends React.Component {
 
     apiResponse = () => {
         return ["First Note", "Second Note", "Third Note", "Fourth Note"]
     }
 
     return(
-        <ul></ul >
+        <ul>
+        {Notes}
+        </ul >
     )
 
 }
