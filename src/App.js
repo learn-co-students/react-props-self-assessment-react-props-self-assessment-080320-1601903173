@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
     <>
-      <Header />
+      <Header header="This is Header Props"/>
       <NotesContainer />
     </>
     )
