@@ -6,8 +6,12 @@ class NotesContainer extends React.Component {
         return ["First Note", "Second Note", "Third Note", "Fourth Note"]
     }
 
+    listItems = apiResponse.map(note => {
+        <li> {note} </li>
+    });
+
     return(
-        <ul></ul >
+        <ul>{listItems}</ul>
     )
 
 }
