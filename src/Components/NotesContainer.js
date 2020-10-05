@@ -8,7 +8,7 @@ class NotesContainer extends React.Component {
     }
     
     render() {
-        const notes = this.apiResponse().map(note => <Note content={note} />);
+        const notes = this.apiResponse().map(note => <Note content = {note} />);
         return (
             <ul>{notes}</ul>
         )
