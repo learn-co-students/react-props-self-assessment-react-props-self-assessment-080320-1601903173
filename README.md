@@ -1,3 +1,4 @@
+Matt Ericksen
 # react-props-practice1
 
 ## Instructions:
