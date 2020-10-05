@@ -10,10 +10,7 @@ class NotesContainer extends React.Component {
     render() {
         return (
             <ul>
-                <Note content={this.apiResponse()[0]} />
-                <Note content={this.apiResponse()[1]} />
-                <Note content={this.apiResponse()[2]} />
-                <Note content={this.apiResponse()[3]} />
+                {this.apiResponse().map(item => <Note content={item}/>)}
             </ul>
         )
     }
