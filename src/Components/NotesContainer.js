@@ -1,4 +1,5 @@
 import React from 'react'
+import Note from './Note'
 
 class NotesContainer extends React.Component {
 
@@ -7,7 +8,8 @@ class NotesContainer extends React.Component {
     }
 
     return(
-        <ul></ul >
+        apiResponse().map(note => <Note content={note}/> )
+        // <ul></ul >
     )
 
 }
