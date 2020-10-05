@@ -1,6 +1,9 @@
 import React from 'react'
 
 
-function Note() {
-    return <li>{props.content}</li>
+
+function note(props) {
+    console.log(props)
+    return <li>{props}</li>
 }
+export default note
