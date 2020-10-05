@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react';
 
 
-function Note() {
-    return <li>{props.content}</li>
+class Note extends Component {
+    render() {
+        return (
+            function Note() {
+                return <li>{this.props.content}</li>
+            }
+        )
+    }
 }
+
+export default Note;
