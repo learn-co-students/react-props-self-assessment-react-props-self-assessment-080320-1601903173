@@ -7,10 +7,12 @@ export default class NotesContainer extends React.Component {
         return ["First Note", "Second Note", "Third Note", "Fourth Note"]
     }
 
-    return(
-        <ul>
-        {Notes}
-        </ul >
-    )
+    render(){
+        return(
+            <ul>
+            {this.apiResponse}
+            </ul >
+        )
+    }
 
 }
