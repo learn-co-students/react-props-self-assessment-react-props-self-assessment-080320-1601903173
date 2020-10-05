@@ -9,16 +9,12 @@ export default class NotesContainer extends React.Component {
 
     allNotes = () => {
         return this.apiResponse().map( function(props){
-            // console.log(note)
             return note(props)
-            // return <div> {note}</div>
-            // return <Note content={note} />
         })
     }
 
         render() {return(
         <ul>
-            
             {this.allNotes()}
         </ul>)
 }
