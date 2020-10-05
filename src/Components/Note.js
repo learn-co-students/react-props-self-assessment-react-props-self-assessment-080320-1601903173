@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-let notes = props.notes.map{function (apiResponse) { return <Notes}}
-function Note() {
-    return <li>{props.content}</li>
+function Note(props) {
+    return <li>{props.note}</li>
 }
+
+
+
+export default Note
