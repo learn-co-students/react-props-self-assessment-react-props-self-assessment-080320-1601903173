@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
 import Header from './Components/Header';
-import Note from './Components/Note';
+import NotesContainer from './Components/NotesContainer'
 
-const customString = "I'm A String";
-const notes= ['note1', 'note2'];
-// I AM STRUGGLIGN WITH GETTING CUSTOM KET NAMES FOR PROPS VALUES
+
+
 class App extends Component {
+  customString = () => "I'm a custom String!"
   render() {
     return(
       <div>
-        <Header props={customString} />
-        <Note props = {notes} />
+        <Header header={this.customString()} />
+        <NotesContainer />
+
       </div>
       
     ) 
