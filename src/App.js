@@ -8,4 +8,14 @@ class App extends Component {
   }
 }
 
+class Header extends Component {
+  render() {
+    
+  }
+
+  Header.defaultProps = {
+    header: "hello"
+  }
+}
+
 export default App;
