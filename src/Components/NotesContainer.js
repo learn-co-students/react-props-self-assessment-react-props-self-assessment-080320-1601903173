@@ -7,7 +7,7 @@ class NotesContainer extends React.Component {
     }
 
     return(
-        <ul></ul >
+        <ul>(this.props.content)</ul >
     )
 
 }

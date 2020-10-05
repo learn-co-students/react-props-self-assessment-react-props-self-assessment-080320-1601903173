@@ -1,4 +1,6 @@
 # react-props-practice1
+I guess I didn't process any of what I watched and took notes on this weekend. I'm hoping to pick it up soon. 
+
 
 ## Instructions:
 
