@@ -1,3 +1,5 @@
+Vincent Collis
+
 # react-props-practice1
 
 ## Instructions:
