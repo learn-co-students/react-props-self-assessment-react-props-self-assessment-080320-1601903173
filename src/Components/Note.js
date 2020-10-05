@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-
-class Note extends Component {
-    render() {
-        return (
-            function Note() {
-                return <li>{this.props.content}</li>
-            }
-        )
-    }
+//Start with functional first
+function Note({ note }) {
+    //destructuring
+    //let { note } = props
+    console.log("note from props: ", note)
+    return <li>{note}</li>
 }
 
 export default Note;

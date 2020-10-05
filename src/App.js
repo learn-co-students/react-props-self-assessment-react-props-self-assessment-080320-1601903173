@@ -4,12 +4,13 @@ import Header from './Components/Header'
 import NotesContainer from './Components/NotesContainer'
 
 class App extends Component {
-  render() {
-    return(
-      <div>
-        <Header header= {"Hello, World!"}/>
+  render() { 
+    return (
+        <>
+        <Header header= "21 Savage" />
         <NotesContainer />
-      </div>
+      </>
+      
     )
   }
 }
