@@ -1,20 +1,17 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./App.scss";
 import Header from './Components/Header'
+import NotesContainer from './Components/NotesContainer'
+
 
 class App extends Component {
   render() {
-    return <header />
-  }
-}
-
-class Header extends Component {
-  render() {
-    
-  }
-
-  Header.defaultProps = {
-    header: "hello"
+    return (
+      <>
+        <Header header="Pantheon Romana" />
+        <NotesContainer />
+      </>
+    )
   }
 }
 

@@ -1,13 +1,38 @@
 import React from 'react'
-
-class NotesContainer extends React.Component {
+import Note from './Note'
+export default class NotesContainer extends React.Component {
 
     apiResponse = () => {
-        return ["First Note", "Second Note", "Third Note", "Fourth Note"]
+        return ["Janus",
+            "Jupiter",
+            "Saturn",
+            "Genius",
+            "Mercury",
+            "Apollo",
+            "Mars",
+            "Vulcan",
+            "Neptune",
+            "Sol",
+            "Orcus",
+            "Liber",
+            "Tellus",
+            "Ceres",
+            "Juno",
+            "Luna",
+            "Diana",
+            "Minerva",
+            "Venus",
+            "Vesta"]
+    }
+    renderNotes = () => {
+        return this.apiResponse().map((el, key) => <Note id={key} note={el}/>)
     }
 
-    return(
-        <ul></ul >
-    )
+    render() {
+        return (
+            <ul>{this.renderNotes()}</ul >
+            // <Note />
+        )
+    }
 
 }
